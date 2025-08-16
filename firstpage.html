@@ -1,48 +1,110 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Bloom & Blossom - Home</title>
-    <link rel="stylesheet" href="flower_style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bloom & Blossom</title>
+  <link rel="stylesheet" href="flower_style.css">
 </head>
 <body>
 
+<!-- Navigation -->
 <nav>
+  <div class="nav-container">
+    <div>
+      <span>Bloom & Blossom</span>
+    </div>
+    <div class="hamburger">&#9776;</div>
     <ul>
-        <li><a href="firstpage.html"class="active">Home</a></li>
-        <li><a href="secondpage.html">Prices</a></li>
-        <li><a href="thirdpage.html">Contact</a></li>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#prices">Prices</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
+  </div>
 </nav>
 
-<header>
-    <h1>Bloom & Blossom</h1>
-    <p>Fresh Flowers, Fresh Smiles</p>
+<!-- Home Section -->
+<header id="home">
+  <h1>Bloom & Blossom</h1>
+  <p>Fresh Flowers, Fresh Smiles</p>
 </header>
 
-<section>
-    <h2 style="text-align:center; color:#b81e4b;">Featured Flowers</h2>
-    <div class="cards">
-        <div class="card">
-            <img src="https://tint.creativemarket.com/NPCIRIXToVEGWeLNJGioxxmNUfMVzyJb6xJJIPhEthk/width:1820/height:1155/gravity:nowe/rt:fill-down/el:1/preset:cm_watermark_retina/czM6Ly9maWxlcy5jcmVhdGl2ZW1hcmtldC5jb20vaW1hZ2VzL3NjcmVlbnNob3RzL3Byb2R1Y3RzLzc0OS83NDk4Lzc0OTg3MDkvamJsZGZsbmtwZ25rMmFzYzMwdGl6bXc0MWhwcXJpcXB3ZXNnM2Z0ZDB6cjZhaXJqaWE5MmFrdG84eTliaG93bS1vLmpwZw" alt="Roses">
-            <h3>Roses</h3>
-            <p>Symbol of love and beauty. Perfect for any romantic occasion.</p>
-        </div>
-        <div class="card">
-            <img src="https://wallsdesk.com/wp-content/uploads/2017/01/Tulips-Photos.jpg" alt="Tulips">
-            <h3>Tulips</h3>
-            <p>Elegant and colorful, bringing joy to any room.</p>
-        </div>
-        <div class="card">
-            <img src="https://i.imgur.com/3bCIQea.jpeg" alt="Lilies">
-            <h3>Lilies</h3>
-            <p>Graceful and fragrant, a timeless choice for gifting.</p>
-        </div>
-    </div>
+<section class="cards">
+  <h2>🌷 Featured Flowers</h2>
+  <div class="card">
+    <img src="https://tint.creativemarket.com/NPCIRIXToVEGWeLNJGioxxmNUfMVzyJb6xJJIPhEthk/width:1820/height:1155/gravity:nowe/rt:fill-down/el:1/preset:cm_watermark_retina/czM6Ly9maWxlcy5jcmVhdGl2ZW1hcmtldC5jb20vaW1hZ2VzL3NjcmVlbnNob3RzL3Byb2R1Y3RzLzc0OS83NDk4Lzc0OTg3MDkvamJsZGZsbmtwZ25rMmFzYzMwdGl6bXc0MWhwcXJpcXB3ZXNnM2Z0ZDB6cjZhaXJqaWE5MmFrdG84eTliaG93bS1vLmpwZw" alt="Roses">
+    <h3>Roses</h3>
+    <p>Symbol of love and beauty. Perfect for any romantic occasion.</p>
+  </div>
+  <div class="card">
+    <img src="https://wallsdesk.com/wp-content/uploads/2017/01/Tulips-Photos.jpg" alt="Tulips">
+    <h3>Tulips</h3>
+    <p>Elegant and colorful, bringing joy to any room.</p>
+  </div>
+  <div class="card">
+    <img src="https://i.imgur.com/3bCIQea.jpeg" alt="Lilies">
+    <h3>Lilies</h3>
+    <p>Graceful and fragrant, a timeless choice for gifting.</p>
+  </div>
 </section>
 
+<!-- Prices Section -->
+<section id="prices" class="price-section">
+  <h2>💐 Our Popular Flowers & Prices</h2>
+  <div class="price-grid">
+    <div class="price-card">
+      <img src="https://www.fnp.ae/images/pr/l/v20230926161631/bunch-of-ravishing-red-roses_3.jpg" alt="Roses">
+      <h3>Roses</h3>
+      <span class="price">Rs. 450 / stem</span>
+    </div>
+    <div class="price-card">
+      <img src="https://img.freepik.com/premium-photo/romantic-bouquets-pink-tulip-flower-wedding-birthday_124507-19501.jpg" alt="Tulips">
+      <h3>Tulips</h3>
+      <span class="price">Rs. 350 / stem</span>
+    </div>
+    <div class="price-card">
+      <img src="https://images.unsplash.com/photo-1561897519-6e4fbd1fbc41?fm=jpg" alt="Lilies">
+      <h3>Lilies</h3>
+      <span class="price">Rs. 400 / stem</span>
+    </div>
+    <div class="price-card">
+      <img src="https://i.pinimg.com/originals/2e/18/a0/2e18a06285d343b4c3a43ca93561cdbd.jpg" alt="Sunflowers">
+      <h3>Sunflowers</h3>
+      <span class="price">Rs. 300 / stem</span>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact-section">
+  <h2>📞 Get in Touch</h2>
+  <p>📍 123 Flower Street, Colombo, Sri Lanka</p>
+  <p>📞 +94 71 123 4567</p>
+  <p>✉ bloom@blossom.com</p>
+
+  <form>
+    <label>Name:</label><br>
+    <input type="text" required><br><br>
+    <label>Email:</label><br>
+    <input type="email" required><br><br>
+    <label>Message:</label><br>
+    <textarea rows="4" required></textarea><br><br>
+    <button type="submit">Send</button>
+  </form>
+</section>
+
+<!-- Footer -->
 <footer>
-    <p>© 2025 Bloom & Blossom | Made with ❤️</p>
+  <p>© 2025 Bloom & Blossom | Made with ❤️</p>
 </footer>
+
+<script>
+  const hamburger = document.querySelector(".hamburger");
+  const navMenu = document.querySelector("nav ul");
+  hamburger.addEventListener("click", () => {
+    navMenu.classList.toggle("show");
+  });
+</script>
 
 </body>
 </html>
