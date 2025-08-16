@@ -1,0 +1,233 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins&display=swap');
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff8f9;
+    color: #444;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #a91a83;
+    padding: 12px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+nav ul li {
+    margin: 0 18px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+nav ul li a:hover {
+    color: #ffe5ec;
+    transform: scale(1.1);
+}
+.active{
+    color:rgb(2, 31, 2);
+}
+
+/* Hero Section */
+header {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
+                url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6') center/cover no-repeat;
+    color: white;
+}
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3em;
+}
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* Section Styling */
+section {
+    padding: 40px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Flower Cards */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+.card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.card h3 {
+    padding: 15px;
+    font-family: 'Playfair Display', serif;
+    color: #b81e4b;
+}
+.card p {
+    padding: 0 15px 15px;
+}
+
+/* Contact Form */
+.contact-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: -50px;
+            justify-content: center;
+        }
+        .contact-info {
+            background: white;
+            padding: 20px;
+            flex: 1;
+            min-width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .contact-info h2 {
+            color: #b81e4b;
+            margin-bottom: 10px;
+        }
+        .contact-info p {
+            margin: 8px 0;
+            font-size: 1em;
+        }
+        
+        iframe {
+            width: 100%;
+            border-radius: 10px;
+            height: 300px;
+        }
+        form {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+input, textarea, button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+button {
+    background: #ff7aa2;
+    color: white;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+button:hover {
+    background: #ff4f82;
+}
+.box {
+      max-width: 500px;
+      margin: 30px auto;
+      background-color: rgb(195, 87, 155);
+      padding: 45px;
+      border-radius: 45px;
+      box-shadow: 0 0 15px rgba(130, 5, 115, 0.1);
+    }
+/* Footer */
+footer {
+    background-color: #a91a83;
+    color: white;
+    text-align: center;
+    padding: 12px 0;
+    margin-top: 30px;
+}
+
+/* Responsive Hero */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+}
+.about-section {
+            background: #fff5f8;
+            padding: 40px;
+            text-align: center;
+            border-radius: 10px;
+            margin-top: -50px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        .about-section p {
+            font-size: 1.1em;
+            max-width: 800px;
+            margin: auto;
+            line-height: 1.7;
+        }
+        
+        /* Prices Section */
+        .price-section {
+            margin-top: 50px;
+        }
+        .price-section h2 {
+            color: #b81e4b;
+            margin-bottom: 20px;
+        }
+        .price-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+        .price-card {
+            background: white;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .price-card:hover {
+            transform: translateY(-5px);
+        }
+        .price-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .price-card h3 {
+            margin: 10px 0 5px;
+            color: #b81e4b;
+        }
+        .price {
+            background: #ff7aa2;
+            color: white;
+            display: inline-block;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-weight: bold;
+            margin-top: 5px;
+        }

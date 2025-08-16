@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    function handleSubmit(event) {
+      event.preventDefault();
+      document.getElementById("response").textContent = "Thank you for your message! I’ll get back to you soon.";
+      event.target.reset();
+    }
+  </script>
+</head>
+<body>
+
+  
+    <nav class="navbar">
+    <ul class="nav-links">
+      <li><a href="new.html">Home</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="index.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+
+<section class="contact-container">
+  <h2>Contact Me</h2>
+  <form onsubmit="handleSubmit(event)">
+    <label>Name:</label>
+    <input type="text" name="name" required>
+    <label>Email:</label>
+    <input type="email" name="email" required>
+    <label>Subject:</label>
+    <input type="text" name="subject" required>
+    <label>Message:</label>
+    <textarea name="message" rows="5" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+  <p id="response"></p>
+</section>
+
+    
+
+   <footer class="site-footer">
+  <div class="footer-content">
+    <p>&copy; 2025 Kanchana Madhushani. All rights reserved.</p>
+    <p>Follow me:
+      <a href="https://www.facebook.com/share/16syoSSYEB/" target="_blank">Facebook</a> |
+      <a href="https://linkedin.com/" target="_blank">LinkedIn</a> |
+      <a href="kanchanamadushani654@gmail.com">Email</a>
+    </p>
+  </div>
+</footer>
+</body>
+</html>
+```
